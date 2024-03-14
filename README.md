@@ -1,4 +1,4 @@
-# 10up-demo-theme
+# 10up Demo - Custom Theme
 Demo for 10up's recruitment team evalute back-end and front-end skills.
 
 ## This repository includes
