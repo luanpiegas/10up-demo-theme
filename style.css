@@ -1,0 +1,101 @@
+/* 
+ * Theme Name: 10up Demo
+ * Theme URI: https://github.com/luanpiegas/10up-demo-theme
+ * Description: 10up Demo Theme
+ * Author: Luan Pegas
+ * Author URI: https://luanpiegas.com
+ * Version: 1.0.0
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+    font-family: "Figtree", sans-serif;
+}
+
+svg {
+    max-width: 100%;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #df2b26;
+}
+
+.loading #arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.loading ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.loading ul li {
+    opacity: 0;
+    width: 0.05rem;
+    height: 100vh;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    padding: 20px;
+}
+
+nav #logo {
+    width: 50px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1280px;
+    margin: 20px auto;
+}
+
+article {
+    padding: 20px;
+    text-align: left;
+    text-wrap: pretty;
+    max-width: 500px;
+    background-color: #181818;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+    background-color: #df2b26;
+}
+
+article div {
+    line-height: 1.5rem;
+}
